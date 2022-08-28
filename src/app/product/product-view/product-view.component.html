@@ -1,0 +1,54 @@
+<!-- <p>product-view works!</p> -->
+
+
+<div class="outer-div">
+    <div class="row">
+        <div class="col col-head">
+            <h1 style="font-size: 30px; font-weight: bold;" class="m-3 d-flex ">Product
+            </h1>
+        </div>
+    </div>
+    
+    <div class="row row1">
+    
+        <div class="col">
+          <h2>Category</h2>
+          <p>{{product.category}}</p>
+        </div>
+    
+        <div class="col col2" >
+            <h2>Product Name</h2>
+          <p>{{product.name}}</p>
+        </div>
+    
+        <div class="col col2">
+            <h2>Product code</h2>
+          <p>{{product.code}}</p>
+        </div>
+    </div>
+    
+    <div class="row row1">
+    
+        <div class="col">
+          <h2>Description</h2>
+          <p>{{product.description}}</p>
+        </div>
+    
+        <div class="col col2">
+            <h2>Instock</h2>
+          <p>{{product.inStock}}</p>
+        </div>
+
+        <div class="col col2">
+            <h2>Color</h2>
+          <p>{{product.color}}</p>
+        </div>
+    
+        
+    </div>
+    
+    
+    
+    <button mat-raised-button color="primary"  [routerLink]="['/product']"  class="but">Back</button>
+    
+    </div>

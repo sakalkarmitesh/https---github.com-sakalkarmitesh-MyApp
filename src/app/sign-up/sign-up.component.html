@@ -1,0 +1,37 @@
+<!-- <h2>Weekly Coding Challenge #1: Sign in/up Form</h2> -->
+<div class="container" id="container" style="margin-top: 6%" >
+	<div class="form-container " >
+		<form (ngSubmit)="onSubmit(myForm)" style="width: 125%;" #myForm="ngForm">
+			<h1>Create Account</h1>
+			
+			<span>or use your email for registration</span>
+			<input type="text" placeholder="Name" />
+			<input type="email" name="email" placeholder="Email" ngModel required email #email="ngModel"/>
+			<small class="text-danger" *ngIf="!email.valid && email.touched">Please enter valid email</small>
+			<input type="password" placeholder="Password" />
+			<button>Sign Up</button>
+          <a class="link" routerlink="/"> <button (click)="navigate()" class="mr">Back Lg</button></a> 
+		</form>
+</div> 
+	
+	 <div class="overlay-container">
+		<div class="overlay">
+			
+			<div class="overlay-panel overlay-right">
+				<h1>Helloo, Friend!</h1>
+				<p>Enter your personal details and start journey with us</p>
+				<button class="ghost" id="signUp">Sign Up</button>
+			</div>
+            
+		</div>
+	</div>
+</div>
+
+<footer>
+	<p>
+		Created with <i class="fa fa-heart"></i> by
+		<a target="_blank" href="https://florin-pop.com">Florin Pop</a>
+		- Read how I created this and how you can join the challenge
+		<a target="_blank" href="https://www.florin-pop.com/blog/2019/03/double-slider-sign-in-up-form/">here</a>.
+	</p>
+</footer>

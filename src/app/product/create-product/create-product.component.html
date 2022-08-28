@@ -1,0 +1,111 @@
+<!-- <p>{{product[0].name}}</p> -->
+<!-- <button (click)="click()" >click</button> -->
+
+<div class=" p-2 text-dark bg-opacity-10 high">
+
+
+  
+
+
+
+  <form class="example-form m-5">
+    <!-- <div class=" row m-4"> -->
+      <!-- <div class="col-md-4 field-box "> -->
+
+        <div class="row">
+          <div class="col col-head">
+          <h1 style="font-size: 30px; font-weight: bold;" class="m-3 d-flex ">Create Product
+          </h1>
+          </div>
+          </div>
+        <form class="example-form" [formGroup]="productForm" (ngSubmit)="submit()">
+          <div class="row">
+            
+            
+            <div class="col ">
+
+              <!-- <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>Category</mat-label>
+                <input matInput placeholder="Ex. joy" value="{{product.category}}" >
+              </mat-form-field> -->
+
+              <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>Category</mat-label>
+                <mat-select>
+                  <mat-option  [value]="">
+                    <!-- {{product.category}} -->
+                  </mat-option>
+                </mat-select>
+              </mat-form-field>
+              
+            </div>
+
+            <div class="col col1">
+
+              <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>Product Name</mat-label>
+                <input matInput placeholder="Ex. Pizza" value="" formControlName="name">
+                <mat-error *ngIf="productForm.get('name')!.errors!==null && productForm.get('name')!.errors!['required']">
+                  Name is required
+                  </mat-error>
+              </mat-form-field>
+            </div>
+
+            <div class="col col1">
+              <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>Code</mat-label>
+                <input matInput placeholder="Ex. Pizza" value="" formControlName="code">
+                <mat-error *ngIf="productForm.get('code')!.errors!==null && productForm.get('code')!.errors!['required']">
+                  code is required
+                  </mat-error>
+              </mat-form-field>
+            </div>
+          </div>
+
+
+          <div class="row row2">
+            <div class="col">
+          <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Color</mat-label>
+            <input matInput placeholder="Ex. Pizza" value="" >
+          </mat-form-field>
+          </div>
+
+          <div class="col col1">
+          <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Description</mat-label>
+            <input matInput placeholder="Ex. Pizza" value="" formControlName="description">
+          </mat-form-field>
+           </div>
+
+           <div class="col col1">
+          <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Instock</mat-label>
+            <input matInput placeholder="Ex. Pizza" value="" formControlName="color">
+          </mat-form-field>
+        </div>
+        </div>
+
+       
+
+          <!-- <input type="text" value="{{EmployeeId}}" *ngIf="editMode"/> -->
+          <!-- <button  (click)="openDialog()">Update</button>
+                 -->
+          <button mat-raised-button color="primary" class="btn">Create</button>
+
+
+        </form>
+
+
+        <!-- <h4>Student Name: {{firstName}}</h4> -->
+        <!-- <h4>Student department: {{department}}</h4> -->
+
+
+      <!-- </div> -->
+    <!-- </div> -->
+
+
+  </form>
+</div>
+
+

@@ -1,0 +1,74 @@
+.title {
+    color: grey;
+    font-size: 18px;
+  }
+  .navbar-brand{
+    /* margin-bottom: 6px; */
+    font-weight: 400;
+  }
+  .logo{
+    font-weight: 600;
+  }
+
+  .font{
+    font-size: large;
+  }
+  button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: black;
+    /* background-color: #000; */
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+  }
+  
+  button:hover, a:hover {
+    opacity: 0.7;
+  }
+  
+
+   /* nav bar css */
+
+   .navbar-brand{
+    /* margin-bottom: 6px; */
+    font-weight: 400;
+  }
+  .logo{
+    /* font-weight: 600; */
+  }
+
+  .font{
+    font-size: large;
+  }
+
+  .twelve a {
+    font-size:26px; font-weight:700;  letter-spacing:1px; text-transform:uppercase; width:160px; text-align:center; margin:auto; white-space:nowrap; padding-bottom:13px;
+  }
+  .twelve a:before {
+      background-color: #c50000;
+      content: '';
+      display: block;
+      height: 3px;
+      width: 75px;
+      margin-bottom: 5px;
+  }
+  .twelve a:after {
+      background-color: #c50000;
+      content: '';
+      display: block;
+    position:absolute; bottom:0;
+      height: 3px;
+      width: 75px;
+      margin-left: 57px;
+      margin-bottom: 0.25em;
+  }
